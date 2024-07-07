@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.nav_wrapper{
+   margin: 0;
+   top: 0;
+    
+}
+
+.nav_containt{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0;
+    margin:  0 auto;
+    position: sticky;
+}
+
+.nav_containt h2{
+    width: 12rem;
+    height: auto;
+    padding-left: 3rem;
+
+}
+.nav_containt ul{
+    list-style: none;
+    display: flex;
+    padding: 0px 10px;
+    gap: 2rem;
+    text-decoration: none;
+    padding-right: 3rem;
+}
+
+.nav_containt a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.nav_containt a::before{
+    content:"";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -0.6rem;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+}
+
+.nav_containt a:hover::before{
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.nav_containt .hire{
+ font-size: 0.9rem;
+ font-weight: 500;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: none;
+ border-radius: 0.4rem;
+ color: #fff;
+ padding: 0.9rem 1rem;
+ outline: 1.5px solid transparent;
+ line-height: 0;
+ cursor: pointer;
+ background: linear-gradient(90deg, #a993fe 0%, #7e61e7 99.87%);
+ transition: all 0.5s ease;
+
+}
+
+.hire:hover{
+    border: 1.1px solid #a993fe;
+}
+
+
+.menu-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    display: none;
+}
+
+.menu-btn:hover{
+     
+     border: 1px solid #a993fe;
+
+
+}
+@media (max-width: 760px){
+    .menu-btn{
+        display: block;
+        margin-right: 0.8rem;
+    }
+    .nav_containt ul{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1325px){
+    .nav-wrapper{
+        padding: 0 1rem;
+    }
+}

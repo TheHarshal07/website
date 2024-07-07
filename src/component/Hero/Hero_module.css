@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body{
+    background-color: rgb(252, 254, 255);
+}
+
+.hero_wrapper{
+    max-width: 1300px;
+    margin-left: 6vh;
+    margin-right: 6vh;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    gap: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    grid-template-columns: 110rem repeat(2 1fr);
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.container h2{
+    font-size: 2rem;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+}
+.container p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.container button{
+    padding: 0.4rem 0.6rem;
+    color: black;
+    border-radius: 2rem;
+
+}
+
+.hero_img{
+    background: url(../assets/Hero_pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 4px rgb(255 255 255/30%);
+    opacity: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: photo_animate 6s ease-in-out infinite 1s;
+}
+
+@keyframes photo_animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+/* ============= Breakpoints ============== */
+@media screen and (max-width:760px) {
+    .hero_wrapper{
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align the items */
+    }
+
+    .container{
+        align-items: center; /* Center align the items in the container */
+    }
+
+    .container h2{
+        margin-bottom: 0.5rem;
+    }
+    .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .container p{
+        max-width: initial;
+        margin-bottom: 0.5rem;
+       
+    }
+    .container .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_img{
+        width: 250px;
+        height: 300px;
+        box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+    }
+}
+
+
+
