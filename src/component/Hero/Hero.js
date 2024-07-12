@@ -8,7 +8,7 @@ export default function Hero() {
     <>
     <section>
         <div className="hero_wrapper">
-            <div className='container'>
+            <div className='container1'>
                 <h2>Harshal Bhogal</h2>
                 <p>I'm Harshal Bhogal studying IT engineering at SARASWATI COLLEGE OF ENGINEERING, KHARGHAR. I am intresting in Blockchain.</p>
                 <div className="btn">

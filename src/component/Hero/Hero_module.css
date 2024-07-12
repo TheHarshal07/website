@@ -15,24 +15,24 @@ body{
     gap: 2rem;
 }
 
-.container {
+.container1 {
     max-width: 1000px;
     grid-template-columns: 110rem repeat(2 1fr);
     column-gap: 2rem;
     align-items: center;
 }
 
-.container h2{
+.container1 h2{
     font-size: 2rem;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
 }
-.container p{
+.container1 p{
     font-size: 1.1rem;
     font-weight: 400;
 }
 
-.container button{
+.container1 button{
     padding: 0.4rem 0.6rem;
     color: black;
     border-radius: 2rem;
@@ -71,24 +71,24 @@ body{
         align-items: center; /* Center align the items */
     }
 
-    .container{
+    .container1 {
         align-items: center; /* Center align the items in the container */
     }
 
-    .container h2{
+    .container1 h2{
         margin-bottom: 0.5rem;
     }
-    .container {
+    .container1 {
         align-items: center;
         text-align: center;
     }
 
-    .container p{
+    .container1 p{
         max-width: initial;
         margin-bottom: 0.5rem;
        
     }
-    .container .btn{
+    .container1 .btn{
         display: flex;
         justify-content: center;
         align-items: center;

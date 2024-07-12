@@ -1,0 +1,8 @@
+.work_experience_card{
+    row-gap: 1vh;
+}
+
+.work_experience_card .head{
+    text-align: center;
+    padding-bottom: 3vh;
+}

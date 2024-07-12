@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './component/navbar/Navbar';
 import Hero from "./component/Hero/Hero"
 import About from "./component/about/about"
 import Skills from "./component/skills/skills"
+import Experience from './component/work_experience/work_experience';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +20,7 @@ root.render(
       <Hero/>
       <About/>
       <Skills/>
+      <Experience/>
 
     </div>
 

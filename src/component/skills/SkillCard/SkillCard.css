@@ -71,5 +71,7 @@
     .skills_card{
         /* margin-left: 4vw; */
         margin-right: 3vw;
+        font-size:  medium;
+        font-weight: 600;
     }
 }

@@ -1,8 +1,10 @@
 .Skill_info_card{
-    min-height: 25rem;
+    min-height: 23rem;
     border: 1px solid black;
     border-radius: 15px;
     margin-top: 1.5vh;
+    
+    
 }
 
 .Skill_info_card h3{
@@ -11,6 +13,11 @@
     padding: 0.3vh 2vw;
     padding-bottom: 2vh;
     border-bottom: 1px solid black;
+    
+    
+}
+.Skill_info_card  .headcontent{
+    text-align: center;
 }
 
 .skill_info_content{
@@ -32,24 +39,42 @@
 }
 
 .skill_progress_bar{
-    width: 100;
+    width: 100%;
     height: 0.4rem;
-    background-color: #e6c4f3;
+    /* background-color: #e6c4f3; */
     border-radius: 0.5rem;
     overflow: hidden;
+   
+    
+    
 }
 
 .skill_progress{
     width: 0;
     height: 0.4rem;
+    
     background: linear-gradient(90deg, #a993fe 0%, #7e61e7 99.87%);
     border-radius: 0.5rem;
     transition: all 0.5s ease-in-out;
+    
 }
 
 
-@media screen and (maxwidth:760px){
-    .Skill_info_card{
-        
-    }
+@media  (max-width:760px){
+   .skill_progress_bar{
+    padding: 0vh 2vw;
+   }
+   .skill_info p{
+    font-size: medium;
+    font-weight: 600;
+}
+.skill_progress{
+    margin-left: 2vw;
+}
+
+.Skill_info_card h3{
+    font-size: medium;
+    font-weight: 600;
+}
+
 }
