@@ -1,26 +1,23 @@
 .contact_details {
     width: 100%;
-    
 }
 
 form {
     display: flex;
     flex-direction: column;
-    grid-gap: 2rem;
-    /* margin: 0 5vh; Apply consistent margins */
+    gap: 2rem; /* Use 'gap' instead of 'grid-gap' for flex containers */
+    padding: 0 2vw; /* Added padding to prevent horizontal overflow */
 }
 
 .name_container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 1.5rem;
-    /* width: 100%; */
+    gap: 1.5rem;
 }
 
 form .name_container input {
-    width: 100%;
-    
+    width: calc(100% - 1.5rem); /* Adjust width to account for gap */
 }
 
 form input,
@@ -29,7 +26,7 @@ form textarea {
     border: 1px solid black;
     border-radius: 4px;
     padding: 2vh;
-    width: 94%; /* Ensure full width */
+    width: 100%; /* Ensure full width */
 }
 
 form button {
@@ -44,11 +41,9 @@ form button {
     color: #ffff;
 }
 
-form button:hover{
+form button:hover {
     font-size: large;
 }
-
-
 
 @media (max-width: 768px) {
     .name_container {
@@ -59,28 +54,22 @@ form button:hover{
 
     form .name_container input {
         width: 100%; /* Ensure inputs take full width */
-        margin-left: auto;
-        margin-right: auto;
     }
 
     form input,
     form textarea,
     form button {
         width: 100%; /* Ensure full width */
-        margin: 0; /* Remove margins */
     }
 
-    form button{
+    form button {
         margin-bottom: 2vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 2vh;
-        
     }
 
-    form{
-        margin-left: 7vh;
-        margin-right: 11vh;
+    form {
+        padding: 0 2vw; /* Ensure padding is consistent */
     }
 }

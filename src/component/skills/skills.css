@@ -1,77 +1,70 @@
-.skill_section{
+.skill_section {
     margin: 4rem 0;
     position: relative;
     margin-left: 3vw;
     margin-top: 15vh;
 }
 
-
-
- .skill_section .heading{
+.skill_section .heading {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 3.5rem;
     text-align: center;
 }
 
-.skill_content{
+.skill_content {
     display: flex;
     align-items: flex-start;
     gap: 3rem;
-    margin-right: 3vw;
-    margin-left: 3vw;
+    margin: 0 3vw;
 }
 
-.skills{
+.skills {
     flex: 1;
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1vh;
-    /* margin-left: 1vw; */
-    
 }
 
-.skill_info{
+.skill_info {
     flex: 1;
 }
 
+@media (max-width: 1025px) {
+    .skills,
+    .skill_content {
+        grid-gap: 2rem;
+    }
+}
 
- @media(max-width: 1025px){
-
-   .skills, 
-   .skill_content{
-    grid-gap: 2rem;
-   }
-
-
-}    
-
-@media (max-width: 760px){
-    .skill_content{
-        margin-left: 4vw;
+@media (max-width: 760px) {
+    .skill_content {
         flex-direction: column-reverse;
         gap: 2rem;
-        margin-right: 5vw;
+        margin: 0 4vw;
     }
 
     .skills,
-    .skill_info{
-        width: 89%;
-        margin-left: 4vw;
-        margin-right: 2vw;
-    }
-    .skill_section{
-        margin-top: 10vh;
+    .skill_info {
+        width: 100%;
+        margin: 0;
     }
 
-    .skill_section .heading{
+    .skill_section {
+        margin-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skill_section .heading {
         margin-bottom: 2.5rem;
     }
 }
 
-@media (max-width:375px){
-    .skill_section{
-        margin-left: 5vh;
+@media (max-width: 375px) {
+    .skill_section {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

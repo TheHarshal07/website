@@ -28,7 +28,7 @@ export default function about() {
             <Stack spacing={2} direction="row" className="btn">
               <Button variant="outlined">
                 <a  download="" href={CV}>
-                  Resume Download
+                  Download Resume 
                 </a>
               </Button>
             </Stack>

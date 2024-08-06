@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
-.about_section{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    
-    
+.about_section {
+    margin: 0 auto; /* Center the section */
+    padding: 0 5vw; /* Use padding to prevent overflow */
 }
 
-
-.about_section .data{
+.about_section .data {
     margin-top: 19vh;
     display: flex;
     flex-direction: column;
@@ -17,47 +14,43 @@
     row-gap: 0.3vh;
 }
 
-.about_section .data h1{
+.about_section .data h1 {
     margin-bottom: 2.5rem;
 }
 
-.about_section img{
+.about_section img {
     width: 260px;
     border-radius: 10px;
-    
 }
 
-.about_container_main{
+.about_container_main {
     margin-top: 8.5vh;
     display: flex;
     column-gap: 6vw;
-
 }
 
-.about_data .about_description{
+.about_data .about_description {
     margin-top: 5vh;
 }
 
-.about_info{
+.about_info {
     display: flex;
     column-gap: 3vw;
 }
 
-.about_data a{
+.about_data a {
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
-
 }
 
-.about_data .btn{
+.about_data .btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
-.about_data Button{
+.about_data button {
     padding: 0.4rem 0.6rem;
     color: #fff;
     border-radius: 2rem;
@@ -65,86 +58,77 @@
     column-gap: 0.5vh;
 }
 
-.about_box{
+.about_box {
     border: 1.2px solid #6852ba;
     padding: 1.25rem 1.95rem;
     border-radius: 10px;
     text-align: center;
     display: flex;
     justify-content: center;
-    
-   
 }
 
-
-@media screen and (max-width: 760px){
-    .about_section{
+@media screen and (max-width: 760px) {
+    .about_section {
         margin-bottom: 2.5rem;
+        padding: 0 3vw; /* Adjust padding to prevent overflow */
     }
-    .about_container_main{
+    .about_container_main {
         flex-direction: column;
         align-items: center;
         column-gap: 2vw;
-        margin-left: 3vw;
-        margin-right: 3vw;
-        
     }
-    .about_section .about_subtitle{
+    .about_section .about_subtitle {
         margin-left: auto;
         margin-right: auto;
     }
-    .about_data .about_description{
+    .about_data .about_description {
         margin-top: 5vh;
-        margin-left: 3vw;
-        margin-right: 3vw;
     }
-    .about_section img{
+    .about_section img {
         width: 200px;
         border-radius: 10px;
-        
     }
-    .about_info{
+    .about_info {
         margin-top: 2vh;
         display: flex;
         justify-content: center;
-     
     }
-    about_box{
+    .about_box {
         border: 1px solid #6852ba;
         padding: 0.2vh 0.5vw;
         border-radius: 10px;
         text-align: center;
         
-       
     }
-   
-
 }
 
-@media (max-width: 490px){
-    .about_section{
+@media (max-width: 490px) {
+    .about_section {
         margin-top: -2.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-    .about_info{
+    .about_info {
         display: flex;
         flex-direction: column;
         row-gap: 2vh;
-        
     }
-    .about_section .about_subtitle{
-        margin-left: 5vh;
-        margin-right: auto;
+    .about_section .about_subtitle {
+        margin-left: 0; /* Remove left margin */
     }
-    .about_box{
-        width: 35vw;
+    .about_box {
+        width: 100%; /* Ensure the box does not overflow */
+        max-width: 35vw;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media (max-width:375px){
-    .about_section{
-        margin-left: 5vh;
+@media (max-width: 375px) {
+    .about_section {
+        padding: 0 2vh; /* Use padding to prevent overflow */
+        margin-left: 1rem; 
+        margin-left: auto;
+        margin-right: auto;/* Remove left margin */
     }
 }

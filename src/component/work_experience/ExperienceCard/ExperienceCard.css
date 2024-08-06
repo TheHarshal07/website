@@ -1,55 +1,51 @@
-.experience_card_details{
+.experience_card_details {
     border: 1px solid #6852ba;
     border-radius: 0.55rem;
-    padding: 1.5rem;
-    padding-top: 0.5rem;
-    margin-left: 5vw;
-    margin-right: 3vw;
-
+    padding: 1rem; /* Reduced padding for better height management */
+    margin-left: 2vw; /* Adjusted for better spacing */
+    margin-right: 2vw; /* Adjusted for better spacing */
+    max-height: 50rem; /* Set a max-height to limit card height */
+    overflow-y: auto; /* Add scrollbar if content overflows */
 }
 
-.experience_card_details h3{
-    font-size: 1.3rem;
+.experience_card_details h3 {
+    font-size: 1.2rem; /* Slightly smaller font size */
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
-.experience_date{
-    font-size: 1.1rem;
+.experience_date {
+    font-size: 1rem; /* Adjusted font size */
     font-weight: 500;
-    padding: 0.5rem;
+    padding: 0.4rem 0.8rem; /* Adjusted padding for smaller buttons */
     background: linear-gradient(90deg, #a993fe 0%, #7e61e7 99.87%);
     width: fit-content;
-    border-radius: 0.5rem;
-    /* margin: 1vh 0 0 0; */
+    border-radius: 0.4rem; /* Adjusted border-radius */
 }
 
-
-
-.experience_card_details ul li{
+.experience_card_details ul li {
     list-style: none;
     padding: 0.2rem 0;
-    margin-bottom: 0.3rem; 
-    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem; /* Adjusted font size */
     font-weight: 400;
     position: relative;
-    
 }
 
-.experience_card_details ul li::after{
+.experience_card_details ul li::after {
     content: " ";
-    width: 0.3rem;
-    height: 0.3rem;
+    width: 0.2rem; /* Adjusted size */
+    height: 0.2rem; /* Adjusted size */
     background-color: black;
     border-radius: 0.5rem;
     position: absolute;
-    left: -1.3rem;
+    left: -1rem; /* Adjusted position */
     top: 0.8rem;
 }
 
-@media (max-width: 760px){
-    .experience_card_details{
-        margin-left: 9vw;
-        margin-right: 9vw;
+@media (max-width: 760px) {
+    .experience_card_details {
+        margin-left: 5vw; /* Adjusted for smaller screens */
+        margin-right: 5vw; /* Adjusted for smaller screens */
     }
 }

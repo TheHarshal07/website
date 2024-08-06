@@ -1,41 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
+body {
+    overflow-x: hidden;
+}
 
 .poppins-black-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
-.nav_wrapper{
-   margin: 0;
-   top: 0;
-   position: sticky;
-   z-index: 2;
-    
 }
 
-.nav_containt{
+.nav_wrapper {
+    margin: 0;
+    top: 0;
+    position: sticky;
+    z-index: 2;
+}
+
+.nav_containt {
     max-width: 1500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0.2rem 0; */
-    margin:  0 auto;
+    margin: 0 auto;
     position: sticky;
     background: transparent;
     backdrop-filter: blur(8px);
-    
 }
 
-.nav_containt h2{
+.nav_containt h2 {
     width: 12rem;
     height: auto;
     padding-left: 3rem;
-
 }
-.nav_containt ul{
+
+.nav_containt ul {
     list-style: none;
     display: flex;
     padding: 0px 10px;
@@ -44,18 +47,17 @@
     padding-right: 3rem;
 }
 
-.nav_containt a{
+.nav_containt a {
     text-decoration: none;
     font-size: large;
     font-weight: 500;
     cursor: pointer;
     position: relative;
     color: #fff;
-
 }
 
-.nav_containt a::before{
-    content:"";
+.nav_containt a::before {
+    content: "";
     width: 2rem;
     height: 0.2rem;
     background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
@@ -67,36 +69,34 @@
     transition: all 0.1s ease;
 }
 
-.nav_containt a:hover::before{
+.nav_containt a:hover::before {
     width: 100%;
     transform: translateX(0);
     opacity: 1;
 }
 
-.nav_containt .hire{
- font-size: 0.9rem;
- font-weight: 500;
- display: flex;
- justify-content: center;
- align-items: center;
- border: none;
- border-radius: 0.4rem;
- color: #fff;
- padding: 0.9rem 1rem;
- outline: 1.5px solid transparent;
- line-height: 0;
- cursor: pointer;
- background: linear-gradient(90deg, #a993fe 0%, #7e61e7 99.87%);
- transition: all 0.5s ease;
-
+.nav_containt .hire {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    padding: 0.9rem 1rem;
+    outline: 1.5px solid transparent;
+    line-height: 0;
+    cursor: pointer;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 99.87%);
+    transition: all 0.5s ease;
 }
 
-.hire:hover{
+.hire:hover {
     border: 1.1px solid #a993fe;
 }
 
-
-.menu-btn{
+.menu-btn {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
@@ -109,41 +109,39 @@
     background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
     line-height: 0;
     cursor: pointer;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     display: none;
 }
 
-.menu-btn:hover{
-     
-     border: 1px solid #a993fe;
+.menu-btn:hover {
+    border: 1px solid #a993fe;
 }
 
-/* Tablet */
-
-
-
-
-@media (max-width: 768px){
-    .menu-btn{
+@media (max-width: 768px) {
+    .menu-btn {
         display: block;
-        margin-right: 1.8rem;
+        margin-right: 1.5rem;
     }
-    .nav_containt ul{
+
+    .nav_containt ul {
         display: none;
     }
-
-}
-
-@media (max-width: 375px){
-    .menu-btn{
-        display: block;
-        margin-right: .6rem;
-    }
-    .nav_containt h2{
+    .nav_containt h2 {
         width: 12rem;
         height: auto;
-        padding-left: 2rem;
-    
+        padding-left: 1.5rem;
     }
 }
 
+@media (max-width: 375px) {
+    .menu-btn {
+        display: block;
+        margin-right: 1.5rem;
+    }
+
+    .nav_containt h2 {
+        width: 12rem;
+        height: auto;
+        padding-left: 1.5rem;
+    }
+}

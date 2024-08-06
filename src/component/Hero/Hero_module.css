@@ -1,52 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-body{
-    /* background-color: rgb(252, 254, 255); */
+
+body {
     background-color: #060417;
     color: #fff;
+    overflow-x: hidden; /* Ensure no horizontal overflow */
 }
 
-.hero_wrapper{
+.hero_wrapper {
     max-width: 1300px;
-    margin-left: 7vh;
-    margin-right: 7vh;
-    margin-top: 5rem;
+    margin: 5rem auto 0 auto; /* Center horizontally */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
     gap: 2rem;
 }
 
 .container1 {
-    max-width: 100vh;
-    grid-template-columns: 110rem repeat(2 1fr);
-    column-gap: 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.container1 .btn{
+.container1 .btn {
     display: flex;
-    column-gap: 2vh;
+    gap: 2vh;
 }
-.container1 h2{
+
+.container1 h2 {
     font-size: 4rem;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
 }
 
 /* Floating text css */
-
-.container1 .span1{
+.container1 .span1 {
     position: relative;
 }
 
-.container1 .span1::before{
+.container1 .span1::before {
     content: "Harshal";
     color: orange;
     animation: words 20s infinite;
 }
 
-.container1 .span1::after{
+.container1 .span1::after {
     content: "";
     position: absolute;
     width: calc(100% + 8px);
@@ -57,70 +56,62 @@ body{
     animation: cursor .8s infinite, typing 20s steps(20) infinite;
 }
 
-@keyframes cursor{
-    to{
+@keyframes cursor {
+    to {
         border-left: 1px solid #060417;
     }
 }
 
 @keyframes words {
-    0%,20%{
+    0%, 20% {
         content: "Harshal";
     }
-    21%,40%{
+    21%, 40% {
         content: "an Engineer";
     }
-    41%,60%{
+    41%, 60% {
         content: "Developer";
     }
-    61%,80%{
+    61%, 80% {
         content: "Secretly Chief";
     }
-    81%,100%{
+    81%, 100% {
         content: "Problem Solver";
     }
-    
-    
 }
 
-@keyframes typing{
-    10%, 15%,30%,35%,50%,55%,70%,75%,90%,95%{
+@keyframes typing {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
         width: 0;
     }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
         width: calc(100% + 8px);
     }
 }
 
-
-.container1 p{
+.container1 p {
     font-size: 1.2rem;
     font-weight: 400;
 }
 
-.container1 button{
-    padding: 0.4rem 0.6rem;
+.container1 button {
+    padding: 1vh 2vh;
     color: #fff;
     border-radius: 2rem;
     font-size: 1.2rem;
-    padding: 1vh 2vh;
-    column-gap: 0.5vh;
-    
-
 }
-.container1 .btn Button a {
+
+.container1 .btn button a {
     text-decoration: none;
     color: #fff;
-    
-    
 }
 
-.hero_img{
+.hero_img {
     background: url(../assets/Hero_pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0 0 0 4px rgb(255 255 255/30%);
+    box-shadow: inset 0 0 0 4px rgb(255 255 255 / 30%);
     opacity: 1;
     justify-self: center;
     width: 350px;
@@ -128,90 +119,64 @@ body{
     animation: photo_animate 6s ease-in-out infinite 1s;
 }
 
-@keyframes photo_animate{
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+@keyframes photo_animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 }
 
 /* ============= Breakpoints ============== */
-
-@media (max-width:1440px){
-    .hero_img{
+@media (max-width: 1440px) {
+    .hero_img {
         width: 550px;
         height: 400px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
     }
 }
 
-@media (max-width:768px) {
-    .hero_wrapper{
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: center; /* Center align the items */
+@media (max-width: 768px) {
+    .hero_wrapper {
+        flex-direction: column;
+        align-items: center;
         margin-top: 1vh;
     }
 
-    .container1 {
-        align-items: center; /* Center align the items in the container */
-    }
-
-    .container1 h2{
+    .container1 h2 {
         margin-bottom: 0.5rem;
         font-size: 2.3rem;
     }
-    .container1 {
-        align-items: center;
-        text-align: center;
-    }
 
-    .container1 p{
+    .container1 p {
         max-width: initial;
         margin-bottom: 0.5rem;
         font-size: 1rem;
-       
     }
-    .container1 .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .container1 .btn {
         margin-top: 1rem;
-        padding: 1vh 2vh;
-    }
-    .container1 Button {
-        column-gap: 0.5vh;
     }
 
-    .container1 .btn Button a {
-        text-decoration: none;
-        display: flex;
-    }
-
-    .hero_img{
+    .hero_img {
         width: 240px;
         height: 280px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255/30%);
+        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
     }
 }
 
-@media (max-width:375px){
-    .container1 h2{
+@media (max-width: 375px) {
+    .container1 h2 {
         margin-bottom: 0.5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
-    .container1 {
-        align-items: center;
-        text-align: center;
-    }
-    .hero_wrapper{
+
+    .hero_wrapper {
         margin-left: 9vh;
+        margin-right: 9vh;
     }
 }
-
-
-

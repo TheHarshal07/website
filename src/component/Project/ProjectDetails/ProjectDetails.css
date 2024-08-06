@@ -1,35 +1,33 @@
-.Project_section .pic .pic-img{
+.Project_section .pic .pic-img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
-.Project_section .pic{
+.Project_section .pic {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 110px;
     width: 116px;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
+    margin: auto; /* Center the element */
     padding: 1vh 2vh;
 }
-.Project_content{
+
+.Project_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     margin-top: 1.1vh;
-    column-gap: 2vh;
+    gap: 2vh; /* Use gap instead of column-gap */
 }
 
-.Project_content button{
+.Project_content button {
     padding: 1vh 4vh;
     border-radius: 8px;
     margin-top: 1.3vh;
@@ -38,77 +36,72 @@
     border: none;
     color: #fff;
     background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
-    transition: all 0.2s ease ;
+    transition: all 0.2s ease;
 }
 
-.Project_section button a{
+.Project_section button a {
     text-decoration: none;
     color: #fff;
 }
 
-
-.Project_content h2{
+.Project_content h2 {
     margin-top: 2.3vh;
 }
-
 
 .Project_section {
     border: 1px solid #6852ba;
     padding: 8vh 10vh;
     border-radius: 35px;
-    margin: 0 2vh;
+    margin: 0 2vh; /* Center the element */
 }
 
-@media (max-width:1024){
-    .Project_section .pic .pic-img{
-        display: flex;
-        margin-right: 10vh;
+@media (max-width: 1024px) {
+    .Project_section .pic .pic-img {
+        margin-right: 0; /* Remove right margin */
     }
 
-    .Project_section button{
-        padding: 0vh 0vh;
+    .Project_section button {
+        padding: 1vh 4vh; /* Keep consistent padding */
     }
 }
 
-@media (max-width:768px){
-    .Project_section .pic .pic-img{
+@media (max-width: 768px) {
+    .Project_section .pic .pic-img {
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        margin-right: 10vh;
+        margin-right: 1vh; /* Remove right margin */
     }
 
-    .Project_content h3{
+    .Project_content h3 {
         font-size: 1rem;
     }
 
-    .Project_section button{
+    .Project_section button {
         font-size: 0.9rem;
-        /* align-items: center; */
-        padding: 0.9vh 0.5vh;
+        padding: 0.9vh 2vh; /* Adjust padding */
     }
 }
 
-
-@media (max-width:425px){
-    .Project_section .pic .pic-img{
+@media (max-width: 425px) {
+    .Project_section .pic .pic-img {
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        margin-right: 1vh;
+        margin-right: 0; /* Remove right margin */
     }
 
-    .Project_section{
-        margin-right: 3vh;
+    .Project_section {
+        margin: 0 auto; /* Center the element */
+        padding: 5vh; /* Adjust padding for smaller screens */
     }
 }
 
-@media(max-width:375px){
-    .Project_section .pic .pic-img{
+@media (max-width: 375px) {
+    .Project_section .pic .pic-img {
         height: 15vh;
-        width: 25vw;
+        width: 15vh; /* Adjust width to avoid overflow */
         border-radius: 50%;
-        margin-right: 11vh;
+        margin-right: 0; /* Remove right margin */
     }
-
 }
