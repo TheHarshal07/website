@@ -1,6 +1,6 @@
 .Skill_info_card{
     min-height: 23rem;
-    border: 1px solid black;
+    border: 1px solid #6852ba;
     border-radius: 15px;
     margin-top: 1.5vh;
     
@@ -12,7 +12,7 @@
     font-weight: 700;
     padding: 0.3vh 2vw;
     padding-bottom: 2vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #6852ba;
     
     
 }
@@ -63,6 +63,7 @@
 @media  (max-width:760px){
    .skill_progress_bar{
     padding: 0vh 2vw;
+    /* margin-right: 3vw; */
    }
    .skill_info p{
     font-size: medium;

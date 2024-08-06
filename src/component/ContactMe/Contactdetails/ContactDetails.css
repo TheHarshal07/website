@@ -1,0 +1,86 @@
+.contact_details {
+    width: 100%;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+    /* margin: 0 5vh; Apply consistent margins */
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    /* width: 100%; */
+}
+
+form .name_container input {
+    width: 100%;
+    
+}
+
+form input,
+form textarea {
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 2vh;
+    width: 94%; /* Ensure full width */
+}
+
+form button {
+    width: 100%;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 2vh;
+    margin-bottom: 2vh;
+    transition: all 0.1s ease;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    color: #ffff;
+}
+
+form button:hover{
+    font-size: large;
+}
+
+
+
+@media (max-width: 768px) {
+    .name_container {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0; /* Remove margins */
+    }
+
+    form .name_container input {
+        width: 100%; /* Ensure inputs take full width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%; /* Ensure full width */
+        margin: 0; /* Remove margins */
+    }
+
+    form button{
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2vh;
+        
+    }
+
+    form{
+        margin-left: 7vh;
+        margin-right: 11vh;
+    }
+}

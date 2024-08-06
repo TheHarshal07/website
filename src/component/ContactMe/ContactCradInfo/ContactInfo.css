@@ -1,0 +1,45 @@
+.Contact_Card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6852ba;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    margin-left: 8vh;
+    transition: all 0.2s ease;
+    /* margin-right: 8vh; */
+}
+
+.Contact_Card_info:hover{
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    color: #ffff;
+}   
+
+.Contact_Card_info .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Contact_Card_info p{
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+
+.Contact_Card_info a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media (max-width:768px){
+    .Contact_Card_info{
+        grid-gap: 1vh;
+        margin-left: 7vh;
+        margin-bottom: 1rem;
+    }
+}

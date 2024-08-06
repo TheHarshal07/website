@@ -4,6 +4,7 @@ import "./Nav.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Mobilenav from "../MobileNav/MobileNav"
+import { Link } from "react-scroll";
 export default function Navbar() {
     // eslint-disable-next-line
     const[openMenu, setOpenmenu] = useState(false);
@@ -11,6 +12,8 @@ export default function Navbar() {
     const toggleMenu = () =>{
         setOpenmenu(!openMenu)
     }
+
+    const offsetvalue = -150;
 
   return (
     <>
@@ -20,16 +23,16 @@ export default function Navbar() {
                 <h2>Harshal</h2>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <Link to="home" smooth={true} duration={500} offset={offsetvalue}>Home</Link>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <Link to="skills" smooth={true} duration={500} offset={offsetvalue} >Skills</Link>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <Link to="project" smooth={true} duration={500}  offset={offsetvalue}>Project</Link>
                     </li>
                     <li>
-                        <a href="#">Experience</a>
+                        <Link to="experience" smooth={true} duration={500}  offset={offsetvalue}>Experience</Link>
                     </li>
                     
                     <button className="hire" onClick={()=>{}}>Hire me</button>

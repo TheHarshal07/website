@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 .about_section{
-    margin: 5vh 6vh 0 6vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
     
 }
 
 
 .about_section .data{
-    margin-top: 10vh;
+    margin-top: 19vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 0.3vh;
-    /* margin-top: 2vh; */
+}
+
+.about_section .data h1{
+    margin-bottom: 2.5rem;
 }
 
 .about_section img{
@@ -25,7 +30,7 @@
 .about_container_main{
     margin-top: 8.5vh;
     display: flex;
-    column-gap: 5vw;
+    column-gap: 6vw;
 
 }
 
@@ -35,28 +40,63 @@
 
 .about_info{
     display: flex;
-    column-gap: 2vw;
+    column-gap: 3vw;
 }
 
 .about_data a{
     text-decoration: none;
-    color: black;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+.about_data .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about_data Button{
+    padding: 0.4rem 0.6rem;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1vh 2vh;
+    column-gap: 0.5vh;
 }
 
 .about_box{
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1.2px solid #6852ba;
     padding: 1.25rem 1.95rem;
     border-radius: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
     
    
 }
 
 
 @media screen and (max-width: 760px){
+    .about_section{
+        margin-bottom: 2.5rem;
+    }
     .about_container_main{
         flex-direction: column;
         align-items: center;
+        column-gap: 2vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        
+    }
+    .about_section .about_subtitle{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_data .about_description{
+        margin-top: 5vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
     }
     .about_section img{
         width: 200px;
@@ -67,19 +107,44 @@
         margin-top: 2vh;
         display: flex;
         justify-content: center;
+     
     }
+    about_box{
+        border: 1px solid #6852ba;
+        padding: 0.2vh 0.5vw;
+        border-radius: 10px;
+        text-align: center;
+        
+       
+    }
+   
+
 }
 
-@media screen and (max-width: 490px){
+@media (max-width: 490px){
+    .about_section{
+        margin-top: -2.5rem;
+    }
+
     .about_info{
         display: flex;
         flex-direction: column;
         row-gap: 2vh;
         
     }
+    .about_section .about_subtitle{
+        margin-left: 5vh;
+        margin-right: auto;
+    }
     .about_box{
         width: 35vw;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width:375px){
+    .about_section{
+        margin-left: 5vh;
     }
 }

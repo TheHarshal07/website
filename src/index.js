@@ -10,7 +10,9 @@ import Hero from "./component/Hero/Hero"
 import About from "./component/about/about"
 import Skills from "./component/skills/skills"
 import Experience from './component/work_experience/work_experience';
-
+import Contactme from './component/ContactMe/Contactme';
+import Footer from './component/Footer/footer';
+import  Projectss  from './component/Project/Project';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,12 +20,13 @@ root.render(
     <Navbar/>
     <div className="container">
       <Hero/>
+      <Projectss/>
       <About/>
       <Skills/>
       <Experience/>
-
+      <Contactme/>
+    <Footer/>
     </div>
-
    </React.StrictMode>
 );
 

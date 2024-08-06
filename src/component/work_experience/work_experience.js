@@ -1,11 +1,13 @@
-import React, {userRef} from 'react'
+import React, { useRef } from 'react'
 import "./work_experience.css"
 import { WORK_EXPERIENCE } from '../utils/data'
 import ExperienceCard from './ExperienceCard/ExperienceCard'
 import Slider from "react-slick"
+import 'boxicons'
 
-const work_experience = () => {
-  // const slideRef = userRef();
+const Work_experience = () => {
+  const slideRef = useRef(); 
+
   const settings = {
     dots: true,
     infinite: true,
@@ -24,15 +26,28 @@ const work_experience = () => {
     ],
   };
 
+  const slideright = () =>{
+    slideRef.current.slickNext();
+  }
+  const slideleft = () =>{
+    slideRef.current.slickPrev();
+  }
+
 
   return (
-    <section className='work_experience_card'>
+    <section id="experience" className='work_experience_card'>
         <h1 className='head'>Work Experience</h1>
 
         <div className="work_experience_content">
-        <Slider  {...settings}>
+          <div className="arrow_left" onClick={slideleft}>
+          <box-icon name='chevron-left' color='#ffff' ></box-icon>
+          </div>
+          <div className="arrow_right" onClick={slideright}>
+          <box-icon name='chevron-right' color='#ffff' ></box-icon>
+          </div>
+        <Slider  ref={slideRef} {...settings}>
         {WORK_EXPERIENCE.map((item)=>(
-            <ExperienceCard key={item.title} details={item} />
+            <ExperienceCard details={item} />
         ))}
       </Slider>
         </div>
@@ -41,4 +56,4 @@ const work_experience = () => {
   )
 }
 
-export default work_experience
+export default Work_experience

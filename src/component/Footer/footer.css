@@ -1,0 +1,16 @@
+.footer {
+    background-color: #060417; /* Light grey background */
+    padding: 20px 0; /* Padding top and bottom */
+    text-align: center; /* Centered text */
+    /* position: fixed; Fix the footer at the bottom of the page */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove margin */
+    color: #fff; /* Dark grey text */
+    font-size: 14px; /* Font size */
+  }
+  

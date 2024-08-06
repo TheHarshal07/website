@@ -67,3 +67,26 @@ export const WORK_EXPERIENCE = [
     }
 
 ]
+
+export const PROJECT = [
+    {   
+        pic: "/images/project.gif",
+        title: "Docs Analysis",
+        buttons: "Know More",
+        link:"https://github.com/TheHarshal07/Docs_Analyzer/tree/master",
+
+    },
+    {
+        pic: "/images/project4.gif",
+        title: "Resume Builder",
+        buttons: "Know More",
+        link:"https://github.com/TheHarshal07/Resume-builder",
+    },
+
+    {
+        pic: "/images/project3.gif",
+        title: "URL Shortner",
+        buttons: "Know More",
+        link:"https://github.com/TheHarshal07/URL_Shortner"
+    }
+]

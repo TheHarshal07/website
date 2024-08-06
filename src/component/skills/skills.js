@@ -15,7 +15,7 @@ export default function skills() {
 
   return (
     <>
-      <section className="skill_section">
+      <section id="skills" className="skill_section">
           <h3 className="heading">Techinal proficiency</h3>
         <div className="skill_content">
           <div className="skills">

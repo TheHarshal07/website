@@ -1,0 +1,48 @@
+
+.first_container{
+    margin-top: 15vh;
+    overflow: hidden; /* Prevents content from going out of the page */
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 21vh;
+}
+
+.content_container{
+    max-width: 1300px;
+    margin-left: 7vh;
+    margin-right: 7vh;
+    top: 0;
+    
+    
+}
+
+.first_container .ProjectTitle{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+.first_container .ProjectTitle{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.first_container{
+    column-gap: 2vh;
+}
+
+
+@media (max-width:425px){
+    .first_container{
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width:375px){
+    .first_container{
+       margin-left: 5vh; 
+    }
+}

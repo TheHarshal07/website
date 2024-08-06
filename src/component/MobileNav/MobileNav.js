@@ -1,7 +1,11 @@
 import React from 'react'
 import "./mobile.css"
+import { Link } from "react-scroll";
 
 export default function MobileNav({isOpen, toggleMenu}) {
+
+  const offsetvalue = -150 
+
   return (
     <>
      <div
@@ -12,16 +16,16 @@ export default function MobileNav({isOpen, toggleMenu}) {
             <h2>Harshal</h2>
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                    <Link to="home" smooth={true} duration={500} offset={offsetvalue}>Home</Link>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                    <Link to="skills" smooth={true} duration={500} offset={offsetvalue} >Skills</Link>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                    <Link to="project" smooth={true} duration={500}  offset={offsetvalue}>Project</Link>
                     </li>
                     <li>
-                        <a href="#">Experience</a>
+                    <Link to="experience" smooth={true} duration={500}  offset={offsetvalue}>Experience</Link>
                     </li>
                 </ul>
                     <button className="hire" onClick={()=>{}}>Hire me</button>
