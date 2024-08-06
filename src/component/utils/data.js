@@ -23,7 +23,7 @@ export const Skills = [
         skills: [
             { skill: "Git & Github", percentage:"85%"},
             {skill :"Visual Studio Code", percentage:"80%"},
-            {skill :"Docker", percentage:"60%"},
+            {skill :"Docker", percentage:"60%"}, 
         ],
     },
   
