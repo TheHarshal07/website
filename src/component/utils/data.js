@@ -29,7 +29,7 @@ export const Skills = [
   
     {
         title: "Soft Skills ",
-        icon: "/images/circle.png",
+        icon: "public/images/circle.png",
         skills: [
             { skill: "Creativity", percentage:"70%"},
             {skill :"Collboration", percentage:"70%"},
