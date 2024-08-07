@@ -8,7 +8,7 @@ export default function SkillCard({title , iconURL, isActive, onClick}) {
      onClick={onClick}
      >
         <div className="skill_icon">
-            <img src={iconURL} alt={title} />
+            {iconURL}
         </div>
 
 

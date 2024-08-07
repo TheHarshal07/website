@@ -172,7 +172,7 @@ body {
 @media (max-width: 375px) {
     .container1 h2 {
         margin-bottom: 0.5rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .hero_wrapper {

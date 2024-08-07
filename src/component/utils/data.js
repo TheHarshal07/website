@@ -1,7 +1,7 @@
 export const Skills = [
     {
         title: "Frontend",
-        icon: "/images/circle.png",
+        icon: <box-icon name='graphql' type='logo' color='#ffffff' ></box-icon>,
         skills: [
             { skill: "HTML5", percentage:"80%"},
             {skill :"CSS3", percentage:"70%"},
@@ -11,7 +11,7 @@ export const Skills = [
     },
     {
         title: "Backend",
-        icon: "/images/circle.png",
+        icon: <box-icon name='graphql' type='logo' color='#ffffff' ></box-icon>,
         skills: [
             { skill: "Django", percentage:"70%"},
            
@@ -19,7 +19,7 @@ export const Skills = [
     },
     {
         title: "Tools",
-        icon: "/images/tools.png",
+        icon: <box-icon name='graphql' type='logo' color='#ffffff' ></box-icon>,
         skills: [
             { skill: "Git & Github", percentage:"85%"},
             {skill :"Visual Studio Code", percentage:"80%"},
@@ -29,7 +29,7 @@ export const Skills = [
   
     {
         title: "Soft Skills ",
-        icon: "public/images/circle.png",
+        icon: <box-icon name='graphql' type='logo' color='#ffffff' ></box-icon>,
         skills: [
             { skill: "Creativity", percentage:"70%"},
             {skill :"Collboration", percentage:"70%"},
@@ -70,21 +70,21 @@ export const WORK_EXPERIENCE = [
 
 export const PROJECT = [
     {   
-        pic: "/images/project.gif",
+        pic: "../images/project.gif",
         title: "Docs Analysis",
         buttons: "Know More",
         link:"https://github.com/TheHarshal07/Docs_Analyzer/tree/master",
 
     },
     {
-        pic: "/images/project4.gif",
+        pic: "../images/project4.gif",
         title: "Resume Builder",
         buttons: "Know More",
         link:"https://github.com/TheHarshal07/Resume-builder",
     },
 
     {
-        pic: "/images/project3.gif",
+        pic: "../images/project3.gif",
         title: "URL Shortner",
         buttons: "Know More",
         link:"https://github.com/TheHarshal07/URL_Shortner"
