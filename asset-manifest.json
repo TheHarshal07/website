@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.3ba29896.css",
-    "main.js": "/website/static/js/main.6d43744d.js",
+    "main.css": "/website/static/css/main.442e7a02.css",
+    "main.js": "/website/static/js/main.ba7ca67a.js",
     "static/js/453.ace21015.chunk.js": "/website/static/js/453.ace21015.chunk.js",
     "static/media/Hero_pic.jpg": "/website/static/media/Hero_pic.a9da69b3bc2b331dd6fe.jpg",
     "static/media/Harshal_Bhogal.pdf": "/website/static/media/Harshal_Bhogal.afea12d845cc3884d176.pdf",
@@ -11,12 +11,12 @@
     "static/media/slick.ttf": "/website/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/website/index.html",
-    "main.3ba29896.css.map": "/website/static/css/main.3ba29896.css.map",
-    "main.6d43744d.js.map": "/website/static/js/main.6d43744d.js.map",
+    "main.442e7a02.css.map": "/website/static/css/main.442e7a02.css.map",
+    "main.ba7ca67a.js.map": "/website/static/js/main.ba7ca67a.js.map",
     "453.ace21015.chunk.js.map": "/website/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ba29896.css",
-    "static/js/main.6d43744d.js"
+    "static/css/main.442e7a02.css",
+    "static/js/main.ba7ca67a.js"
   ]
 }
