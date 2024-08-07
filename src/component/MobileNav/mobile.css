@@ -74,8 +74,18 @@
     .mobile_menu {
         display: block;
     }
+    .hire{
+        margin-left: 0.5rem;
+    }
 
     .mobile_menu a {
         color: #fff;
+    }
+}
+
+
+@media (max-width:375px){
+    .hire{
+        padding: .9rem .8rem;
     }
 }
