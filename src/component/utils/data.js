@@ -58,7 +58,7 @@ export const WORK_EXPERIENCE = [
     {
         title: "Data Analyst Intern - Digital Documentation PVT LTD",
         company: "Softech",
-        date: "Dec’22 - May’22",
+        date: "Dec’22 - May’23",
         responsibility: [
             "Identified patterns and extracted data from diverse bank statements using Python libraries, Pandas, NumPy, and regex.",
             "Teamed up with coworkers to pinpoint and rectify data-related issues promptly",

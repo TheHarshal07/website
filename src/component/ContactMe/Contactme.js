@@ -14,7 +14,7 @@ const Contactme = () => {
         <ContactInfo
             urlInfo={Img}
             text = "harshalbhogal8@gmail.com"
-            link = "mailto:email@echoecho.com"
+            link = "mailto:harshalbhogal8@gmail.com"
         />
         <ContactInfo
             urlInfo={github}

@@ -133,10 +133,10 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 355px) {
     .menu-btn {
         display: block;
-        margin-right: 1.5rem;
+        margin-right: 0.8rem;
     }
 
     .nav_containt h2 {
