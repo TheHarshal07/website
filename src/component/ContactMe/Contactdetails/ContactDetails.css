@@ -29,7 +29,7 @@ form textarea {
     width: 100%; /* Ensure full width */
 }
 
-form button {
+form .button {
     width: 100%;
     font-size: 1rem;
     border: 1px solid black;
@@ -41,7 +41,7 @@ form button {
     color: #ffff;
 }
 
-form button:hover {
+form .button:hover {
     font-size: large;
 }
 
@@ -58,11 +58,11 @@ form button:hover {
 
     form input,
     form textarea,
-    form button {
+    form .button {
         width: 100%; /* Ensure full width */
     }
 
-    form button {
+    form .button {
         margin-bottom: 2vh;
         display: flex;
         justify-content: center;
