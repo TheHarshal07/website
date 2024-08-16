@@ -2,9 +2,12 @@ import React, { useRef, useState } from 'react';
 import './ContactDetails.css';
 import emailjs from '@emailjs/browser';
 import Pop from '../Popup/success';
+import Fail from "../Popup/failmsg"
 
 const ContactDetails = () => {
   const [Popup, setpopUp] = useState(false);
+
+  const [Failed, setFailed] = useState(false);
 
   const form = useRef();
 
@@ -24,6 +27,10 @@ const ContactDetails = () => {
       },
       (error) => {
         console.log('FAILED...', error.text);
+        setFailed(true);
+        setInterval(() =>{
+          setFailed(false);
+        },5000)
       },
     );
   };
@@ -44,6 +51,7 @@ const ContactDetails = () => {
         </form>
       </section>
       {Popup && <Pop  />}
+      {Failed && <Fail /> }
     </>
   );
 };
