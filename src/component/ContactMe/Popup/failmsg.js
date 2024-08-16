@@ -8,7 +8,7 @@ const failmsg = () => {
       <div className="fail_header">
         <h5>Something went wrong, please try again
         </h5>
-        <div id="progressBar" className="progress-bar"></div>
+        <div id="progressBar" className="progress-bar-failed"></div>
       </div>
     </div>
   );

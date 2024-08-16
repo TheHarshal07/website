@@ -22,7 +22,7 @@
     
 }
 
-.progress-bar {
+.progress-bar-success {
     height: 4px;
     background-color: green;
     margin-top: 10px;
@@ -38,7 +38,7 @@
 @media (max-width: 768px){
     .success_container {
         margin-left: 5vh;
-        margin-right: 5vh;
+        margin-right: 3vh;
         top: 11vh;
 
         

@@ -9,13 +9,14 @@ const ContactDetails = () => {
 
   const [Failed, setFailed] = useState(false);
 
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm( ${{SERVICE_ID}}, ${{TEMPLATE_ID}}, form.current, {
-      publicKey: ${{PUBLIC_KEY}},
+    emailjs.sendForm( process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
+      publicKey: process.env.REACT_APP_PUBLIC_KEY,
     })
     .then(
       () => {
@@ -47,7 +48,7 @@ const ContactDetails = () => {
           <input type="text" placeholder='Email' name="user_email" required />
           <textarea type="text" name="message" placeholder='Message' required></textarea>
 
-          <input   className='button' type="submit" value="Send" />
+          <input  className='button' type="submit" value="Send" />
         </form>
       </section>
       {Popup && <Pop  />}

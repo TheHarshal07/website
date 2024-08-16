@@ -9,7 +9,7 @@ const Success = () => {
         <h5>Message sent ✅
         will get back to you
         </h5>
-        <div id="progressBar" className="progress-bar"></div>
+        <div id="progressBar" className="progress-bar-success"></div>
       </div>
     </div>
   );
