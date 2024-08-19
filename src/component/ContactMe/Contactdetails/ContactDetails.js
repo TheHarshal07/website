@@ -15,8 +15,8 @@ const ContactDetails = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm( process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, {
-      publicKey: process.env.REACT_APP_PUBLIC_KEY,
+    emailjs.sendForm( ${{SERVICE_ID}}, ${{TEMPLATE_ID}}, form.current, {
+      publicKey: ${{PUBLIC_KEY}},
     })
     .then(
       () => {
