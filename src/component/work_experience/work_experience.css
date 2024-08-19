@@ -1,7 +1,7 @@
 .work_experience_card {
     row-gap: 1vh;
     margin-top: 15vh;
-    padding: 0 2vw; /* Add padding to handle margins on smaller screens */
+    padding: 0 6vw; /* Add padding to handle margins on smaller screens */
 }
 
 .work_experience_card .head {

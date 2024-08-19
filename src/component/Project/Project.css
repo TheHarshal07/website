@@ -1,8 +1,9 @@
 .first_container {
     overflow: hidden; /* Prevents content from going out of the page */
     margin: 0 auto;
-    padding: 20px;
+    padding: 0 2vw;
     margin-top: 21vh;
+    gap: 2vh; /* Use gap for spacing */
 }
 
 .content_container {
@@ -22,10 +23,6 @@
     font-weight: 700;
 }
 
-.first_container {
-    gap: 2vh; /* Use gap instead of column-gap */
-}
-
 @media (max-width: 425px) {
     .first_container {
         margin-top: 10vh;
@@ -35,7 +32,7 @@
 
 @media (max-width: 375px) {
     .first_container {
-        margin-left: 0; /* Remove left margin */
         padding: 0 2vh; /* Use padding to prevent overflow */
+        /* margin-left: 0; (This is redundant, so it's removed) */
     }
 }

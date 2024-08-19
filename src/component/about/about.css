@@ -2,7 +2,7 @@
 
 .about_section {
     margin: 0 auto; /* Center the section */
-    padding: 0 5vw; /* Use padding to prevent overflow */
+    padding: 0 7vw; /* Use padding to prevent overflow */
 }
 
 .about_section .data {
@@ -36,6 +36,8 @@
 .about_info {
     display: flex;
     column-gap: 3vw;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_data a {
@@ -98,13 +100,13 @@
         padding: 0.2vh 0.5vw;
         border-radius: 10px;
         text-align: center;
-        
     }
 }
 
 @media (max-width: 490px) {
     .about_section {
         margin-top: -2.5rem;
+        padding: 0 3vw; /* Maintain consistent padding */
         margin-left: auto;
         margin-right: auto;
     }
@@ -114,11 +116,11 @@
         row-gap: 2vh;
     }
     .about_section .about_subtitle {
-        margin-left: 0; /* Remove left margin */
+        margin-left: auto; /* Remove left margin */
     }
     .about_box {
-        width: 100%; /* Ensure the box does not overflow */
-        max-width: 35vw;
+        width: 90%; /* Ensure the box does not overflow */
+        max-width: 35vw; /* Consider adjusting max-width to a percentage */
         margin-left: auto;
         margin-right: auto;
     }
@@ -126,9 +128,8 @@
 
 @media (max-width: 375px) {
     .about_section {
-        padding: 0 2vh; /* Use padding to prevent overflow */
-        margin-left: 1rem; 
+        padding: 0 3vw; /* Use padding to prevent overflow */
         margin-left: auto;
-        margin-right: auto;/* Remove left margin */
+        margin-right: auto; /* Align center */
     }
 }

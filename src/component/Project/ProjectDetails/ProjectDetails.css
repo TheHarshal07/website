@@ -70,7 +70,7 @@
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        margin-right: 1vh; /* Remove right margin */
+        margin-right: 1vh; /* Retained but consider removing if unnecessary */
     }
 
     .Project_content h3 {
@@ -88,12 +88,12 @@
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        margin-right: 0; /* Remove right margin */
+        margin-right: 0; /* Remove right margin for smaller screens */
     }
 
     .Project_section {
         margin: 0 auto; /* Center the element */
-        padding: 5vh; /* Adjust padding for smaller screens */
+        padding: 5vh 2vw; /* Adjust padding for smaller screens */
     }
 }
 
@@ -102,6 +102,7 @@
         height: 15vh;
         width: 15vh; /* Adjust width to avoid overflow */
         border-radius: 50%;
-        margin-right: 0; /* Remove right margin */
+        margin-right: 0; /* Ensure no extra margin */
     }
 }
+

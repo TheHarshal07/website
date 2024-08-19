@@ -3,6 +3,7 @@
     position: relative;
     margin-left: 3vw;
     margin-top: 15vh;
+    padding: 0 2vw;
 }
 
 .skill_section .heading {
@@ -51,6 +52,11 @@
         margin: 0;
     }
 
+    .skills {
+        grid-template-columns: 1fr 1fr; /* Maintain 2 columns even on smaller screens */
+        gap: 1.5rem;
+    }
+
     .skill_section {
         margin-top: 10vh;
         margin-left: auto;
@@ -66,5 +72,7 @@
     .skill_section {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 5vh;
     }
+
 }
